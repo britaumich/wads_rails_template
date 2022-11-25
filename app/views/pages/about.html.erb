@@ -18,3 +18,18 @@
         <% end %>
       </div>
 </div>
+
+<div class="px-1 pb-2">
+  <%= label_tag 'some_text_field' %>
+  <%= text_field :some_text_field, placeholder: "Contains", class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2" %>
+</div>
+
+<div class="px-1 pb-2">
+  <%= check_box_tag 'some_check_box' %>
+  <%= label_tag "Some check box" %>
+</div>
+
+<div class="my-5">
+    <%= label_tag :number %>
+    <%= select_tag "numbers", options_for_select([ "one", "two", "three" ]), { prompt: "Select something", class: "block rounded-none rounded-l-md text-base border-gray-300" } %>
+  </div>
