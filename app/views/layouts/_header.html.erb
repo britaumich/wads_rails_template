@@ -16,13 +16,13 @@
         </div>
         <div class="hidden sm:ml-6 sm:flex sm:space-x-4 pl-2">
           <div class="header_link">
-            <%= link_to "link one", pages_home_path, class: "#{class_names(active: current_page?(pages_home_path))}" %>
+            <%= link_to "Home", pages_home_path, class: "#{class_names(active: current_page?(pages_home_path))}" %>
           </div>
           <div class="header_link">
             <%= link_to "Responsive sidebar", pages_index_path, class: "#{class_names(active: current_page?(pages_index_path))}" %>
           </div>
           <div class="header_link">
-            <%= link_to 'link three', pages_about_path, class: "#{class_names(active: current_page?(pages_about_path))}" %>
+            <%= link_to 'Titles and Buttons', pages_about_path, class: "#{class_names(active: current_page?(pages_about_path))}" %>
           </div>
         </div>
       </div>
