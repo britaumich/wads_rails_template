@@ -10,4 +10,47 @@
   }
 }
 
+from https://tailwindcss.com/docs/adding-custom-styles
 */
+
+@layer base {
+  .header_link {
+    @apply border-transparent text-blue-50 inline-flex items-center pr-1 pt-1 border-b-2 text-base font-normal
+  }
+
+  .header_link:hover {
+    @apply border-blue-300 text-white
+  }
+
+  h1 {
+    @apply text-2xl;
+  }
+
+  h2 {
+    @apply text-xl;
+  }
+
+  /* ... */
+}
+
+@layer components {
+  .select2-dropdown {
+    @apply rounded-b-lg shadow-md;
+  }
+
+  .select2-search {
+    @apply border border-gray-300 rounded;
+  }
+
+  .select2-results__group {
+    @apply text-lg font-bold text-gray-900;
+  }
+
+  /* ... */
+}
+
+@layer utilities {
+  .content-auto {
+    content-visibility: auto;
+  }
+}
