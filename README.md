@@ -21,4 +21,8 @@ application.register('dropdown', Dropdown)
 
 - copy files from app/views/layouts
 
+### Create a page with responsive sidebar
 
+- Copy views/pages/index.html.erb
+- Copy images/svg/filter-solid.svg
+- copy javascript/mobile_menu.js
