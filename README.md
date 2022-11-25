@@ -1,5 +1,8 @@
 # README
 
+### Styles 
+- assets/stylesheets/applicagtion.tgailwind.css file has description of styles' classes
+
 ### Add mobile menu to header 
 
 - run commands
@@ -26,3 +29,6 @@ application.register('dropdown', Dropdown)
 - Copy views/pages/index.html.erb
 - Copy images/svg/filter-solid.svg
 - copy javascript/mobile_menu.js
+- test for large and mobile screen
+
+### Examples of button, titles, texts, etc.
