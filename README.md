@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Add mobile menu to header 
 
-Things you may want to cover:
+- run commands
 
-* Ruby version
+```
+bin/importmap pin stimulus-dropdown
+rails g stimulus dropdown
+```
 
-* System dependencies
+- then copy-paste the following code into the dropdown controller
 
-* Configuration
+```
+import { Application } from '@hotwired/stimulus'
+import Dropdown from 'stimulus-dropdown'
 
-* Database creation
+const application = Application.start()
+application.register('dropdown', Dropdown)
+```
 
-* Database initialization
+- copy files from app/views/layouts
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
