@@ -6,14 +6,14 @@
 
   <h3> h3 title</h3>
 
-  <%= link_to 'Edit this item', pages_home_path, class: "my-2 px-2 py-1 rounded-md shadow-sm bg-blue-umblue text-sm text-gray-100 text-center hover:underline" %>
-  <%= link_to 'Delete', pages_home_path, method: :post, data: { confirm: 'Are you sure?' }, class: "my-2 px-2 py-1 hover:underline rounded-md shadow-sm bg-gray-100 text-sm text-blue-umblue text-center" %>
+  <%= link_to 'Edit this item', pages_home_path, class: "edit_button" %>
+  <%= link_to 'Delete', pages_home_path, method: :post, data: { confirm: 'Are you sure?' }, class: "delete_button" %>
   
   <div class="mt-2">
         <%= link_to pages_home_path, data: { "turbo-frame": "_top" } do %>
-          <div class="flex items-center text-sm text-blue-umblue hover:underline pb-2">
+          <div class="back_button">
             <%= svg("left-arrow-svgrepo-com")  %>
-            <span>Back to search</span>
+            <span>Back</span>
           </div>
         <% end %>
       </div>
