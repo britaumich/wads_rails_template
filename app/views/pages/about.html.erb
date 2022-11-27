@@ -1,15 +1,26 @@
 <div class="container px-1 mb-20">
+  <h1>This is an h1 title</h1>
+  <br>
+  <h2>And now an h2 title</h>
+  <br><br>
 
-  <h1> WADS Rails Template (h1 title)</h1>
+  <h3>Finally an h3 title</h3>
+  <div class="my-4">
+    <label class="flex text-sm font-medium text-gray-900 sm:mt-0 sm:col-span-2">
+      Label
+    </label>
+    <div class="ml-2 text-sm text-gray-700 flex-grow">
+      some text
+    </div>
+  </div>
 
-  <h2> h2 title</h>
-
-  <h3> h3 title</h3>
-
-  <%= link_to 'Edit this item', pages_home_path, class: "edit_button" %>
-  <%= link_to 'Delete', pages_home_path, method: :post, data: { confirm: 'Are you sure?' }, class: "delete_button" %>
-  
-  <div class="mt-2">
+  <div class="my-2">
+    <%= link_to 'Edit this item', pages_home_path, class: "edit_button" %>
+  </div>
+  <div class="my-2">
+    <%= link_to 'Delete', pages_home_path, method: :post, data: { confirm: 'Are you sure?' }, class: "delete_button" %>
+  </div>
+  <div class="my-2">
         <%= link_to pages_home_path, data: { "turbo-frame": "_top" } do %>
           <div class="back_button">
             <%= svg("left-arrow-svgrepo-com")  %>
@@ -19,17 +30,17 @@
       </div>
 </div>
 
-<div class="px-1 pb-2">
-  <%= label_tag 'some_text_field' %>
-  <%= text_field :some_text_field, placeholder: "Contains", class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2" %>
+<div class="px-1">
+  <%= label_tag 'text_field_label' %>
+  <%= text_field :some_text_field, placeholder: "Contains", class: "block shadow rounded-md border border-gray-200 outline-none" %>
 </div>
 
-<div class="px-1 pb-2">
-  <%= check_box_tag 'some_check_box' %>
+<div class="px-1 pb-2 my-2">
+  <%= check_box_tag 'check_box_label' %>
   <%= label_tag "Some check box" %>
 </div>
 
 <div class="my-5">
-    <%= label_tag :number %>
+    <%= label_tag "select_field_label" %>
     <%= select_tag "numbers", options_for_select([ "one", "two", "three" ]), { prompt: "Select something", class: "block rounded-none rounded-l-md text-base border-gray-300" } %>
   </div>
