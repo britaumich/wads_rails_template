@@ -1,16 +1,49 @@
 <div class="container px-1 mb-20">
-  <h1>This is an h1 title</h1>
+  <h1>h1 title - text-3xl font-semibold (font-size: 30px; font-weight: 600;)</h1>
   <br>
-  <h2>And now an h2 title</h>
-  <br><br>
-
-  <h3>Finally an h3 title</h3>
+  <h2>h2 title - text-2xl font-semibold(font-size: 24px; font-weight: 600;)</h2>
+  <br>
+  <h3>h3 title - text-lg font-semibold(font-size: 18px; font-weight: 600;)</h3>
+  <br>
+  <h4>h4 title - text-base font-normal(font-size: 16px; font-weight: 400;)</h3>
+  <br>
+  <h5>h5 title - text-sm font-normal(font-size: 14px; font-weight: 400;)</h3>
+  <br>
+  <h6>h6 title - text-xs font-normal(font-size: 12px; font-weight: 400;)</h3>
+  <br>
+  <div class="body-text">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+    It has survived not only five centuries, but also the leap into electronic typesetting,
+    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
+    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
+    like Aldus PageMaker including versions of Lorem Ipsum.
+  <dix>
   <div class="my-4">
-    <label class="flex text-sm font-medium text-gray-900 sm:mt-0 sm:col-span-2">
-      Label
+    <label class="button_label">
+      Button label
     </label>
-    <div class="ml-2 text-sm text-gray-700 flex-grow">
-      some text
+  </div>
+
+  <div class="my-4">
+    <span class="caption">
+      Caption text
+    </span>
+  </div>
+
+  <div class="my-4">
+    <span class="breadcrumb">
+      Bread Crumb
+    </span>
+  </div>
+
+  <div class="my-4">
+    <label class="text_field_label">
+      Label for text
+    </label>
+    <div class="text_small">
+      some text with text_small class
     </div>
   </div>
 
@@ -31,16 +64,35 @@
 </div>
 
 <div class="px-1">
-  <%= label_tag 'text_field_label' %>
-  <%= text_field :some_text_field, placeholder: "Contains", class: "block shadow rounded-md border border-gray-200 outline-none" %>
+  <%= label_tag 'some_text_field', nil, class: 'text_field_label' %>
+  <%= text_field :some_text_field, placeholder: "Contains", class: "input_test_field" %>
 </div>
 
-<div class="px-1 pb-2 my-2">
-  <%= check_box_tag 'check_box_label' %>
-  <%= label_tag "Some check box" %>
+<div class="px-1 pb-2 my-2 flex items-center text-sm font-bold text-gray-900">
+  <%= check_box_tag 'check_box_label', 0, false, { class: "form-checkbox w-5 h-5 rounded mr-2 border-blue-umblue text-blue-umblue focus:ring-blue-umblue" } %>
+  <%= label_tag "Checkbox" %>
 </div>
 
 <div class="my-5">
-    <%= label_tag "select_field_label" %>
-    <%= select_tag "numbers", options_for_select([ "one", "two", "three" ]), { prompt: "Select something", class: "block rounded-none rounded-l-md text-base border-gray-300" } %>
-  </div>
+  <%= label_tag "select_field_label" %>
+  <%= select_tag "numbers", options_for_select([ "one", "two", "three" ]), { prompt: "Select something", class: "block rounded-none rounded-l-md text-base border-gray-300" } %>
+</div>
+
+<div class="relative px-2 group">
+  <label for="first_name" class="text-sm font-bold text-gray-900 dark:text-gray-300 bg-white relative px-1 top-2 left-3 w-auto group-focus-within:text-red-600">Label</label>
+  <input type="text" name="first_name" id="first_name" class="text-lg font-medium text-gray-900 bg-white border py-55-rem border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 
+      dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+    required="" placeholder="John Doe" />
+</div>
+
+<div class="relative my-2 px-2 group">
+  <label for="first_name" class="fancy_label">Label</label>
+  <input type="text" name="first_name" id="first_name" class="fancy_input_text_field"
+    required="" placeholder="John Doe" />
+</div>
+
+<div class="my-5 relative px-2 group">
+  <label for="numbers" class="text-sm font-bold text-gray-900 dark:text-gray-300 bg-white relative px-1 top-2 left-3 w-auto group-focus-within:text-red-600">Select label</label>
+  <%#= label_tag "Add label", class: "text-sm font-bold text-gray-900 dark:text-gray-300 bg-white relative px-1 top-2 left-3 w-auto group-focus-within:text-red-600" %>
+  <%= select_tag "numbers", options_for_select([ "one", "two", "three" ]), { prompt: "Select ...", class: "w-full text-lg font-medium text-gray-900 bg-white border py-2 border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5" } %>
+</div>
