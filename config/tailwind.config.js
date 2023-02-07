@@ -1,6 +1,8 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
+  mode: 'jit',
+  // These paths are just examples, customize them to match your project structure
   content: [
     './public/*.html',
     './app/helpers/**/*.rb',
@@ -27,6 +29,7 @@ module.exports = {
         300: '#e2e8f0',
         400: '#cbd5e0',
         500: '#a0aec0',
+        550: '#888A86',
         600: '#718096',
         700: '#4a5568',
         800: '#2d3748',
