@@ -15,11 +15,7 @@ from https://tailwindcss.com/docs/adding-custom-styles
 
 @layer base {
   .header_link {
-    @apply border-transparent text-blue-50 inline-flex items-center pr-1 pt-1 border-b-2 text-base font-normal
-  }
-
-  .header_link:hover {
-    @apply border-blue-300 text-white
+    @apply border-transparent text-blue-50 inline-flex items-center pr-1 pt-1 border-b-2 text-base font-normal hover:border-blue-300 text-white
   }
 
   .active {
@@ -27,27 +23,27 @@ from https://tailwindcss.com/docs/adding-custom-styles
   }
 
   h1 {
-    @apply text-3xl font-semibold leading-10;
+    @apply text-3xl font-semibold leading-10 font-oswald;
   }
 
   h2 {
-    @apply text-2xl font-semibold leading-9;
+    @apply text-2xl font-semibold leading-9 font-oswald;
   }
 
   h3 {
-    @apply text-lg font-semibold leading-7;
+    @apply text-lg font-semibold leading-7 font-oswald;
   }
 
   h4 {
-    @apply text-base font-normal leading-6;
+    @apply text-base font-normal leading-6 font-oswald;
   }
 
   h5 {
-    @apply text-sm font-normal leading-5;
+    @apply text-sm font-normal leading-5 font-oswald;
   }
 
   h6 {
-    @apply text-xs font-normal leading-4;
+    @apply text-xs font-normal leading-4 font-oswald;
   }
 
   .body-text {
@@ -55,7 +51,7 @@ from https://tailwindcss.com/docs/adding-custom-styles
   }
 
   .button_label {
-    @apply text-sm font-medium leading-4 text-gray-550;
+    @apply text-sm font-medium leading-4 text-gray-550 font-montserrat;
   }
 
   .caption {
@@ -75,27 +71,15 @@ from https://tailwindcss.com/docs/adding-custom-styles
   }
 
   .edit_button {
-    @apply my-2 px-2 py-1 rounded-md shadow-sm bg-blue-umblue text-sm text-gray-100 text-center
-  }
-
-  .edit_buton:hover {
-    @apply underline
+    @apply my-2 px-2 py-1 rounded-md shadow-sm bg-blue-umblue text-sm text-gray-100 text-center hover:underline
   }
 
   .back_button {
-    @apply flex items-center text-sm text-blue-umblue pb-2
-  }
-
-  .back_buton:hover {
-    @apply underline
+    @apply flex items-center text-sm text-blue-umblue pb-2 hover:underline
   }
 
   .delete_button {
-    @apply my-2 px-2 py-1 rounded-md shadow-sm bg-gray-100 text-sm text-blue-umblue text-center
-  }
-
-  .delete_buton:hover {
-    @apply underline
+    @apply my-2 px-2 py-1 rounded-md shadow-sm bg-gray-100 text-sm text-blue-umblue text-center hover:underline
   }
 
   .input_text_field {
@@ -103,21 +87,34 @@ from https://tailwindcss.com/docs/adding-custom-styles
   }
 
   .fancy_input_text_field {
-    @apply text-lg font-medium text-gray-900 bg-white border border-gray-600 rounded-lg block p-2.5
-  }
-
-  .fancy_input_text_field:focus {
-    @apply ring-blue-500 border-blue-500
+    @apply text-lg font-medium text-gray-900 bg-white border border-gray-600 rounded-lg block p-2.5 focus:ring-blue-500 focus:border-blue-500
   }
 
   .fancy_label {
-    @apply text-sm font-bold text-gray-900 bg-white relative px-1 top-2 left-3 w-auto
+    @apply text-sm font-bold text-gray-900 bg-white relative px-1 top-2 left-3 w-auto group-focus-within:text-red-600
   }
 
-  .fancy_label:group-focus-within {
-    @apply text-red-600
+  /* table */
+
+  .mi_table {
+    @apply px-2 min-w-full divide-y;
   }
 
+  .mi_thead {
+    @apply bg-gray-400
+  }
+
+  .header_th {
+    @apply p-2 text-sm font-semibold text-gray-900 lg:table-cell text-left
+  }
+
+  .mi_tbody_tr {
+    @apply relative sm:pl-2 text-sm bg-white even:bg-gray-200
+  }
+
+  .mi_tbody_td {
+    @apply relative p-2 sm:pl-2 text-sm font-medium text-gray-900 text-left
+  }
   /* ... */
 }
 

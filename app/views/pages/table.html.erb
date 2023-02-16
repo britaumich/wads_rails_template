@@ -1,0 +1,32 @@
+<div class="container px-1 mb-20">
+
+  <h1> Table Template.</h1>
+  
+  <div class="px-4 sm:px-6 lg:px-8" data-controller="reservation">
+  
+  <div class="">
+    <table class="mi_table">
+      <thead class="mi_thead">
+        <tr>
+          <th class="header_th"><%= @headers[0] %></th>
+          <th class="header_th"><%= @headers[1] %></th>
+          <th class="header_th"><%= @headers[2] %></th>
+          <th class="header_th"><%= @headers[3] %></th>
+          <th class="header_th"><%= @headers[4] %></th>
+          <th class="header_th"><%= @headers[5] %></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @data.each do |item| %>
+          <tr class="mi_tbody_tr">
+            <% item.each do |key, value| %>
+              <td class="mi_tbody_td">
+                  <%= value %>
+              </td>
+            <% end %>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

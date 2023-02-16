@@ -24,6 +24,9 @@
           <div class="header_link">
             <%= link_to 'Titles and Buttons', pages_about_path, class: "#{class_names(active: current_page?(pages_about_path))}" %>
           </div>
+          <div class="header_link">
+          <%= link_to 'Table', pages_table_path, class: "#{class_names(active: current_page?(pages_table_path))}" %>
+        </div>
         </div>
       </div>
       <div class="hidden sm:ml-6 sm:flex sm:items-center">
