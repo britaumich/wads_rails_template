@@ -70,8 +70,28 @@ from https://tailwindcss.com/docs/adding-custom-styles
     @apply ml-2 text-sm text-gray-700
   }
 
+  .primary_button {
+    @apply p-2 font-montserrat font-semibold leading-7 text-base border rounded text-white bg-blue-umblue
+  }
+
+  .primary_button:hover {
+    @apply underline text-blue-umblue bg-white border-solid border-blue-umblue border-2
+  }
+
+  .primary_button:active {
+    @apply underline text-blue-umblue bg-white border-solid border-blue-umblue border-2
+  }
+
+  .primary_button:focus {
+    @apply underline text-blue-umblue bg-white border-solid border-blue-umblue border-2
+  }
+
+  .primary_button:disabled {
+    @apply opacity-25 pointer-events-none
+  }
+  
   .sign_button {
-    @apply px-1 shadow-sm font-medium rounded text-blue-900 bg-yellow-550 hover:bg-yellow-500 hover:underline
+    @apply px-1 shadow-sm font-medium rounded text-blue-900 bg-yellow-550 bg-yellow-500 hover:underline
   }
 
   .edit_button {
