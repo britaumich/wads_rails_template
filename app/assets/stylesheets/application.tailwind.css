@@ -70,6 +70,10 @@ from https://tailwindcss.com/docs/adding-custom-styles
     @apply ml-2 text-sm text-gray-700
   }
 
+  .sign_button {
+    @apply px-1 shadow-sm font-medium rounded text-blue-900 bg-yellow-550 hover:bg-yellow-500 hover:underline
+  }
+
   .edit_button {
     @apply my-2 px-2 py-1 rounded-md shadow-sm bg-blue-umblue text-sm text-gray-100 text-center hover:underline
   }

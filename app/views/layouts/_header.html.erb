@@ -32,7 +32,11 @@
       <div class="hidden sm:ml-6 sm:flex sm:items-center">
         <div class="ml-2 relative">
           <div class="grid justify-items-end flex flex-wrap items-center">
-            current_user
+            <div>
+              <%= button_to pages_home_path, data: {turbo: "false"} do %>
+                  <div class="sign_button">Sign In</div>
+              <% end %>
+            </div>
           </div>
         </div>
       </div>
