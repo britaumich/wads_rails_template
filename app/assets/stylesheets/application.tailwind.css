@@ -87,9 +87,49 @@ from https://tailwindcss.com/docs/adding-custom-styles
   }
 
   .primary_button:disabled {
-    @apply opacity-25 pointer-events-none
+    @apply opacity-50 bg-black pointer-events-none text-white
+  }
+
+  .secondary_yellow_button {
+    @apply p-2 font-montserrat font-semibold leading-7 text-base border rounded text-blue-umblue bg-yellow-ummaze
+  }
+
+  .secondary_yellow_button:hover {
+    @apply underline text-blue-umblue bg-white border-solid border-yellow-ummaze border-2
+  }
+
+  .secondary_yellow_button:active {
+    @apply underline text-blue-umblue bg-white border-solid border-yellow-ummaze border-2
+  }
+
+  .secondary_yellow_button:focus {
+    @apply underline text-blue-umblue bg-white border-solid border-yellow-ummaze border-2
+  }
+
+  .secondary_yellow_button:disabled {
+    @apply opacity-50 bg-black pointer-events-none text-white
   }
   
+  .secondary_blue_button {
+    @apply p-2 font-montserrat font-semibold leading-7 text-base border rounded text-white bg-blue-750
+  }
+
+  .secondary_blue_button:hover {
+    @apply underline text-blue-750 bg-white border-solid border-blue-750 border-2
+  }
+
+  .secondary_blue_button:active {
+    @apply underline text-blue-750 bg-white border-solid border-blue-750 border-2
+  }
+
+  .secondary_blue_button:focus {
+    @apply underline text-blue-750 bg-white border-solid border-blue-750 border-2
+  }
+
+  .secondary_blue_button:disabled {
+    @apply opacity-50 bg-black pointer-events-none text-white
+  }
+
   .sign_button {
     @apply px-1 shadow-sm font-medium rounded text-blue-900 bg-yellow-550 bg-yellow-500 hover:underline
   }

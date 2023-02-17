@@ -71,7 +71,8 @@ module.exports = {
         750: '#9D691B',
         800: '#975a16',
         900: '#744210',
-        umyellow: '#ffcb05'
+        umyellow: '#ffcb05',
+        ummaze: '#FFCF01'
       },
       green: {
         100: '#f0fff4',
@@ -94,6 +95,7 @@ module.exports = {
         500: '#4299e1',
         600: '#3182ce',
         700: '#2b6cb0',
+        750: '#006AB8',
         800: '#2c5282',
         900: '#00274c',
         umblue: '#00274c',
