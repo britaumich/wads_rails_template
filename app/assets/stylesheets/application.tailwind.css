@@ -130,6 +130,26 @@ from https://tailwindcss.com/docs/adding-custom-styles
     @apply opacity-50 bg-black pointer-events-none text-white
   }
 
+  .tertiary_button {
+    @apply p-2 font-montserrat font-semibold leading-7 text-base text-blue-umblue
+  }
+
+  .tertiary_button:hover {
+    @apply underline
+  }
+
+  .tertiary_button:active {
+    @apply underline
+  }
+
+  .tertiary_button:focus {
+    @apply underline
+  }
+
+  .tertiary_button:disabled {
+    @apply text-opacity-50 pointer-events-none text-blue-umblue
+  }
+
   .sign_button {
     @apply px-1 shadow-sm font-medium rounded text-blue-900 bg-yellow-550 bg-yellow-500 hover:underline
   }
