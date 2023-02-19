@@ -86,7 +86,12 @@
   <br>
 
   <div>
-    <%= button_to 'Tertiary Button', pages_home_path, class: "tertiary_button" %>
+    <%= button_to pages_home_path do %>
+      <div class="tertiary_button">
+        <span class="tertiary_button"> Tertiary Button</span>
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+    <% end %>
   </div>
   <br>
 
@@ -94,6 +99,11 @@
     <button type="button" class="tertiary_button" disabled>Tertiary Button</button>
   </div>
   <br>
+
+<i class="fa-solid fa-flag"></i>
+<i class="fa-brands fa-amazon"></i>
+<i class="fa-regular fa-bell"></i>
+<i class="fa-solid fa-chevron-right"></i>
 
   <div class="my-2">
     <%= link_to 'Edit this item', pages_home_path, class: "edit_button" %>

@@ -151,7 +151,7 @@ from https://tailwindcss.com/docs/adding-custom-styles
   }
 
   .sign_button {
-    @apply px-1 shadow-sm font-medium rounded text-blue-900 bg-yellow-550 bg-yellow-500 hover:underline
+    @apply px-1 shadow-sm font-base rounded text-blue-900 bg-yellow-550 bg-yellow-500 hover:underline
   }
 
   .edit_button {
