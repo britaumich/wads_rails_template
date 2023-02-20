@@ -141,11 +141,27 @@
     required="" placeholder="John Doe" />
 </div>
 <hr>
+
+
 <div class="px-1 pb-2 my-2 flex items-center text-sm font-bold text-gray-900">
-  <%= check_box_tag 'check_box_label', 0, false, { class: "form-checkbox w-5 h-5 rounded mr-2 border-blue-umblue text-blue-umblue focus:ring-blue-umblue" } %>
+  <%= check_box_tag 'check_box_label', 0, false, { class: "w-5 h-5 rounded mr-2 border-blue-umblue text-blue-umblue focus:ring-blue-umblue" } %>
   <%= label_tag "Checkbox" %>
 </div>
+
+<div class="flex justify-start">
+  <ol class="switches">
+    <li>
+      <%= check_box_tag :visible %>
+      <%= label_tag :visible do %>
+        <span class="label-text">Active</span>
+        <span></span>
+      <% end %>
+    </li>
+  </ol>
+</div>
 <hr>
+
+
 <div class="my-5">
   <%= label_tag "select_field_label" %>
   <%= select_tag "numbers", options_for_select([ "one", "two", "three" ]), { prompt: "Select something", class: "block rounded-none rounded-l-md text-base border-gray-300" } %>
