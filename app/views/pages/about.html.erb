@@ -47,6 +47,8 @@
     </div>
   </div>
 
+<hr>
+
   <div>
     <%= button_to pages_home_path, data: {turbo: "false"} do %>
         <div class="sign_button">Sign In</div>
@@ -71,7 +73,7 @@
   <br>
 
   <div>
-    <button type="button" class="secondary_yellow_button" disabled>Secondary Button</button>
+    <%= button_to 'Secondary Button', pages_home_path, disabled: true, class: "secondary_yellow_button" %>
   </div>
   <br>
 
@@ -81,22 +83,23 @@
   <br>
 
   <div>
-    <button type="button" class="secondary_blue_button" disabled>Secondary Button</button>
+    <%= button_to 'Secondary Button', pages_home_path, disabled: true, class: "secondary_blue_button" %>
   </div>
   <br>
 
   <div>
     <%= button_to pages_home_path do %>
       <div class="tertiary_button">
-        <span class="tertiary_button"> Tertiary Button</span>
-        <i class="fa-solid fa-chevron-right"></i>
+        <span class="tertiary_button"> Tertiary Button
+          <i class="fa-solid fa-chevron-right"></i>
+        </span>
       </div>
     <% end %>
   </div>
   <br>
 
   <div>
-    <button type="button" class="tertiary_button" disabled>Tertiary Button</button>
+    <button type="button" class="tertiary_button" disabled>Tertiary Button <i class="fa-solid fa-chevron-right"></i></button>
   </div>
   <br>
 
@@ -104,7 +107,6 @@
 <i class="fa-brands fa-amazon"></i>
 <i class="fa-regular fa-bell"></i>
 <i class="fa-solid fa-chevron-right"></i>
-
   <div class="my-2">
     <%= link_to 'Edit this item', pages_home_path, class: "edit_button" %>
   </div>
@@ -125,33 +127,28 @@
       </div>
 </div>
 <br>
+<hr>
 
 <div class="px-1">
   <%= label_tag 'some_text_field', nil, class: 'text_field_label' %>
-  <%= text_field :some_text_field, placeholder: "Contains", class: "input_test_field" %>
+  <%= text_field_tag :some_text_field, nil, placeholder: "Contains", class: "fancy_input_text_field" %>
 </div>
 
+
+<div class="relative my-2 px-2 group">
+  <label for="name" class="fancy_label">Enter name</label>
+  <input type="text" name="name" id="name" class="fancy_input_text_field"
+    required="" placeholder="John Doe" />
+</div>
+<hr>
 <div class="px-1 pb-2 my-2 flex items-center text-sm font-bold text-gray-900">
   <%= check_box_tag 'check_box_label', 0, false, { class: "form-checkbox w-5 h-5 rounded mr-2 border-blue-umblue text-blue-umblue focus:ring-blue-umblue" } %>
   <%= label_tag "Checkbox" %>
 </div>
-
+<hr>
 <div class="my-5">
   <%= label_tag "select_field_label" %>
   <%= select_tag "numbers", options_for_select([ "one", "two", "three" ]), { prompt: "Select something", class: "block rounded-none rounded-l-md text-base border-gray-300" } %>
-</div>
-
-<div class="relative px-2 group">
-  <label for="first_name" class="text-sm font-bold text-gray-900 dark:text-gray-300 bg-white relative px-1 top-2 left-3 w-auto group-focus-within:text-red-600">Label</label>
-  <input type="text" name="first_name" id="first_name" class="text-lg font-medium text-gray-900 bg-white border py-55-rem border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 
-      dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-    required="" placeholder="John Doe" />
-</div>
-
-<div class="relative my-2 px-2 group">
-  <label for="first_name" class="fancy_label">Label</label>
-  <input type="text" name="first_name" id="first_name" class="fancy_input_text_field"
-    required="" placeholder="John Doe" />
 </div>
 
 <div class="my-5 relative px-2 group">

@@ -46,6 +46,10 @@ from https://tailwindcss.com/docs/adding-custom-styles
     @apply text-xs font-normal leading-4 font-oswald;
   }
 
+  hr {
+    @apply border-blue-900 border m-4
+  }
+
   .body-text {
     @apply text-xs font-medium leading-4;
   }
@@ -151,7 +155,7 @@ from https://tailwindcss.com/docs/adding-custom-styles
   }
 
   .sign_button {
-    @apply px-1 shadow-sm font-base rounded text-blue-900 bg-yellow-550 bg-yellow-500 hover:underline
+    @apply px-1 shadow-sm text-base rounded text-blue-900 bg-yellow-550 bg-yellow-500 hover:underline
   }
 
   .edit_button {
@@ -171,7 +175,7 @@ from https://tailwindcss.com/docs/adding-custom-styles
   }
 
   .fancy_input_text_field {
-    @apply text-lg font-medium text-gray-900 bg-white border border-gray-600 rounded-lg block p-2.5 focus:ring-blue-500 focus:border-blue-500
+    @apply text-lg font-medium text-gray-900 bg-white border border-gray-600 rounded block p-2 focus:ring-blue-500 focus:border-blue-500
   }
 
   .fancy_label {
