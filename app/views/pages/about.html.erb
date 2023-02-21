@@ -221,11 +221,11 @@
 
 <div class="my-5">
   <%= label_tag "select_field_label" %>
-  <%= select_tag "numbers", options_for_select([ "one", "two", "three" ]), { prompt: "Select something", class: "block rounded-none rounded-l-md text-base border-gray-300" } %>
+  <%= select_tag "numbers", options_for_select([ "one", "two", "three" ]), { prompt: "Select something ...", class: "fancy_input_text_field" } %>
 </div>
 
 <div class="my-5 relative px-2 group">
-  <label for="numbers" class="text-sm font-bold text-gray-900 dark:text-gray-300 bg-white relative px-1 top-2 left-3 w-auto group-focus-within:text-red-600">Select label</label>
-  <%#= label_tag "Add label", class: "text-sm font-bold text-gray-900 dark:text-gray-300 bg-white relative px-1 top-2 left-3 w-auto group-focus-within:text-red-600" %>
-  <%= select_tag "numbers", options_for_select([ "one", "two", "three" ]), { prompt: "Select ...", class: "w-full text-lg font-medium text-gray-900 bg-white border py-2 border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5" } %>
+  <label for="numbers" class="fancy_label">Select label</label>
+  <%#= label_tag "Add label", class: "fancy_label" %>
+  <%= select_tag "numbers", options_for_select([ "one", "two", "three four five six seven" ]), { prompt: "Select something ...", class: "fancy_input_text_field" } %>
 </div>
