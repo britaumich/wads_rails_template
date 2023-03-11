@@ -188,13 +188,13 @@
 
 <div class="px-1">
   <%= label_tag 'some_text_field', nil, class: 'text_field_label' %>
-  <%= text_field_tag :some_text_field, nil, placeholder: "Contains", class: "fancy_input_text_field" %>
+  <%= text_field_tag :some_text_field, nil, placeholder: "Contains", class: "input_text_field" %>
 </div>
 
 
 <div class="relative my-2 px-2 group">
   <label for="name" class="fancy_label">Enter name</label>
-  <input type="text" name="name" id="name" class="fancy_input_text_field"
+  <input type="text" name="name" id="name" class="input_text_field"
     required="" placeholder="John Doe" />
 </div>
 <hr>
@@ -221,11 +221,11 @@
 
 <div class="my-5">
   <%= label_tag "select_field_label" %>
-  <%= select_tag "numbers", options_for_select([ "one", "two", "three" ]), { prompt: "Select something ...", class: "fancy_input_text_field" } %>
+  <%= select_tag "numbers", options_for_select([ "one", "two", "three" ]), { prompt: "Select something ...", class: "input_text_field" } %>
 </div>
 
 <div class="my-5 relative px-2 group">
   <label for="numbers" class="fancy_label">Select label</label>
   <%#= label_tag "Add label", class: "fancy_label" %>
-  <%= select_tag "numbers", options_for_select([ "one", "two", "three four five six seven" ]), { prompt: "Select something ...", class: "fancy_input_text_field" } %>
+  <%= select_tag "numbers", options_for_select([ "one", "two", "three four five six seven" ]), { prompt: "Select something ...", class: "input_text_field" } %>
 </div>
